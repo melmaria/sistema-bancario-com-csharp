@@ -24,7 +24,7 @@ namespace ConsoleTeste.SistemaBanco
         }
         public void Sacar(decimal valor)
         {
-            if(valor <- Saldo)
+            if(valor < Saldo)
                 Saldo -= valor;
             else
                 ConsoleTeste.WriteLine("Saque não pode ser realizado, pois não tem saldo suficiente");
